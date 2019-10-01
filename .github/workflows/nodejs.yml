@@ -26,13 +26,4 @@ jobs:
         CI: true
 
     - name: Coveralls
-        uses: coverallsapp/github-action@v1.0.1
-        with:
-          github-token: ${{ secrets.github_token }}
-          parallel: true
-
-    - name: Coveralls Finished
-        uses: coverallsapp/github-action@v1.0.1
-        with:
-          github-token: ${{ secrets.github_token }}
-          parallel-finished: true
+      uses: coverallsapp/github-action@v1.0.1
